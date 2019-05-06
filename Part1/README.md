@@ -320,12 +320,13 @@ function play(clickedId) {
   // DETERMINES IF THE BOARD IS FULL, ALERTS WHEN IT IS
   let boardFull = true;
   for (let i = 0; i <= 8; i++) {
-    if (board[i] === undefined) {
+    if (box[i] === undefined) {
       boardFull = false;
     }
   }
-  if (boardFull === true) {
+  if (boardFull == true) {
     alert("Cat's game, there is no winner");
+   window.location.reload()
   }
 }
 
